@@ -20,14 +20,36 @@ html, body {
 }
 
 .container {
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
     padding: 5px;
 }
 
+figure {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+figcaption {
+    color: gray;
+    font-size: .75em;
+}
+
 #hood {
     display: flex;
     flex-flow: row wrap;
+}
+
+.common {
+    color: #be6f65;
+    font-weight: bold;
+}
+
+.places {
+    color: #be9165;
+    font-weight: bold;
 }
 
 .item {
@@ -55,6 +77,21 @@ select {
     width: 100%;
 }
 
+ul {
+    display: table;
+    margin: 0 auto;
+}
+
+/*.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    display: table;
+    margin: 0 auto;
+}
+*/
 /* Tablet/Desktop overrides */
 @media(min-width: 681px) {
 

@@ -18,69 +18,160 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      	<![endif]-->
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
   </head>
 
   <body>
     <!-- YOUR CONTENT GOES HERE -->
+    <!-- <Open main containter -->
+    <figure>
+      <img src="img/opening.jpeg" />
+      <figcaption>Photo Credit: AirBnB</figcaption>
+    </figure>
     <div class="container">
-      <h1>See what AirBnB looks like in your neighborhood?</h1>
-
       <p>New York City is known for its restricted living spaces, but New Yorkers who rent out their rooms on AirBnB are doing everything they can to shift attention from that. </p>
 
-      <p> A text analysis of nearly 50,000 AirBnB listing names across the five boroughs shows that the words “cozy,” “private,” and “spacious” are frequently used to describe rooms and apartments.</p>
+      <p> A text analysis of nearly 50,000 AirBnB listing names across the five boroughs shows that the words
+        “<span class="common"> cozy</span>,” “<span class="common"> private</span>,” and “<span class="common"> spacious</span>”
+        are frequently used to describe rooms and apartments.</p>
 
-      <p>But each borough returned a different set of adjectives. Sure, “brownstone” makes sense for Brooklyn, but what about “convenient” to describe a place in Staten Island? We’re not as convinced.</p>
+      <p>But each borough returned a different set of adjectives. Sure, <span class="places"> “brownstone” </span> makes sense for Brooklyn, but what about <span class="places"> “convenient”
+        </span> to describe a place in Staten Island? We’re not as convinced.</p>
 
       <p>See how your borough is depicted to attract visitors. </p>
       <p>Where do you live?</p>
-      <p>Use the dropdown to find your borough</p>
+      <p> <span style="color: #000000; font-weight: bold;"> Use the dropdown to find your borough </span></p>
+
+      <!-- how to change specific words in a string of text found here: https://stackoverflow.com/questions/4622808/html-changing-colors-of-specific-words-in-a-string-of-text -->
       <div>
         <select class="filter">
-          <option value="item">Filter...</option>
+          <option value="filter">Filter...</option>
           <option value="brooklyn">Brooklyn</option>
           <option value="queens">Queens</option>
           <option value="bronx">Bronx</option>
           <option value="manhattan">Manhattan</option>
-          <option value="staten island">Staten Island</option>
+          <option value="staten">Staten Island</option>
         </select>
-
-
-        <section id="hood">
-          <div class="item hood active">
-            <img src="img/brooklyn.jpg" />
-            <h3>Brooklyn</h3>
-          </div>
-
-          <div class="item hood active">
-            <img src="img/bronx.jpg" />
-            <h3>Bonx</h3>
-          </div>
-
-          <div class="item hood active">
-            <img src="img/manhattan.jpg" />
-            <h3>Manhattan</h3>
-          </div>
-
-          <div class="item hood active">
-            <img src="img/queens.jpg" />
-            <h3>Queens</h3>
-          </div>
-
-          <div class="item hood active">
-            <img src="img/staten.jpg" />
-            <h3>Staten Island</h3>
-          </div>
-        </section>
       </div>
 
-      <!-- the jQuery library. You need this to be able to use jQuery ($) -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <section id="hoods">
+        <div class="item brooklyn">
+          <img src="img/brooklyn.jpg" />
+        </div>
 
-      <!-- Your javascript should be called here -->
-      <script src="main.js"></script>
+        <div class="item bronx">
+          <img src="img/bronx.jpg" />
+        </div>
+
+        <div class="item manhattan">
+          <img src="img/manhattan.jpg" />
+        </div>
+
+        <div class="item queens">
+          <img src="img/queens.jpg" />
+        </div>
+
+        <div class="item staten">
+          <img src="img/staten.jpg" />
+        </div>
+      </section>
+
+    </div>
+
+    <section id="words">
+      <div class="item brooklyn">
+        <h3> <span style="color: #BE6F65"> Brooklyn </span> </h3>
+        <ul>
+          <li>Private</li>
+          <li>Sunny</li>
+          <li>Spacious</li>
+          <li>Cozy</li>
+          <li>Loft</li>
+          <li>Beautiful</li>
+          <li>Brownstone</li>
+          <li>Garden</li>
+          <li>Large</li>
+          <li>Charming</li>
+        </ul>
+      </div>
+
+      <section id="words">
+        <div class="item queens">
+          <h3> <span style="color: #BE6F65"> Queens </span> </h3>
+          <ul>
+            <li>Private</li>
+            <li>Cozy</li>
+            <li>Spacious</li>
+            <li>Sunny</li>
+            <li>Loft</li>
+            <li>Beautiful</li>
+            <li>Large</li>
+            <li>Charming</li>
+            <li>Luxury</li>
+            <li>Modern</li>
+          </ul>
+        </div>
+
+        <section id="words">
+          <div class="item bronx">
+            <h3> <span style="color: #BE6F65"> The Bronx </span> </h3>
+            <ul>
+              <li>Cozy</li>
+              <li>Private</li>
+              <li>Spacious</li>
+              <li>Beautiful</li>
+              <li>Sunny</li>
+              <li>Large</li>
+              <li>Great</li>
+              <li>Comfy</li>
+              <li>Artsy</li>
+              <li>Quiet</li>
+            </ul>
+          </div>
+
+          <section id="words">
+            <div class="item manhattan">
+              <h3> <span style="color: #BE6F65"> Manhattan </span> </h3>
+              <ul>
+                <li>Cozy</li>
+                <li>Spacious</li>
+                <li>Private</li>
+                <li>Sunny</li>
+                <li>Large</li>
+                <li>Beautiful</li>
+                <li>Luxury</li>
+                <li>Loft</li>
+                <li>Charming</li>
+                <li>Central</li>
+              </ul>
+            </div>
+
+            <section id="words">
+              <div class="item staten">
+                <h3> <span style="color: #BE6F65"> Staten Island </span> </h3>
+                <ul>
+                  <li>Private</li>
+                  <li>New</li>
+                  <li>Spacious</li>
+                  <li>Charming</li>
+                  <li>Clean</li>
+                  <li>Cozy</li>
+                  <li>Colonial</li>
+                  <li>Beautiful</li>
+                  <li>Victorian</li>
+                  <li>Convenient</li>
+                </ul>
+              </div>
+
+
+
+              <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+              <!-- Your javascript should be called here -->
+              <script src="main.js"></script>
   </body>
 
 </html>
