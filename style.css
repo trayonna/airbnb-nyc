@@ -82,16 +82,21 @@ ul {
     margin: 0 auto;
 }
 
-/*.row {
+/*   Code for the columns below
+ {
+    box-sizing: border-box;
+}
+
+.row {
     display: flex;
 }
 
 .column {
-    flex: 50%;
+    flex: 40%;
     display: table;
     margin: 0 auto;
 }
-*/
+End of columns code */
 /* Tablet/Desktop overrides */
 @media(min-width: 681px) {
 
