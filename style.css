@@ -16,7 +16,8 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;
+    font-size: 24px;
+    font-family: Georgia
 }
 
 .container {
@@ -61,6 +62,7 @@ figcaption {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 34%;
+    list-style-position: inside;
 }
 
 .item.active {
